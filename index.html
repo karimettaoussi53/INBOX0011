@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    
+    <!-- SEO & Search Engines -->
+    <title>FixPro - AI Maintenance Expert | خبير الصيانة الذكي</title>
+    <meta name="description" content="FixPro is your AI-powered home appliance repair expert. Diagnose issues with smartphones, TVs, Fridges, and more instantly in Arabic, English, French, and Amazigh.">
+    <meta name="keywords" content="صيانة, إصلاح, ذكاء اصطناعي, صيانة منزلية, FixPro, AI Repair, Maintenance, Troubleshooting, أدوات منزلية, Smartphone repair">
+    <meta name="author" content="FixPro AI">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fixpro-ai.app" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FixPro - AI Maintenance Expert">
+    <meta property="og:description" content="Instant AI diagnosis for your home appliances. Try it now!">
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/3063/3063822.png">
+    <meta property="og:url" content="https://fixpro-ai.app">
+    
+    <!-- PWA & Mobile -->
+    <meta name="theme-color" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="FixPro">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3063/3063822.png">
+
+    <!-- Performance: Preconnect & Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+      :root {
+        --app-bg-light: #f8fafc;
+        --app-bg-dark: #020617;
+      }
+      body {
+        font-family: 'Plus Jakarta Sans', 'Noto Sans Arabic', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+        overscroll-behavior-y: none; /* Prevents pull-to-refresh on mobile which feels nicer for apps */
+      }
+      .animate-bounce-slow {
+        animation: bounce 3s infinite;
+      }
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      /* Improved Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(100, 116, 139, 0.3);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(100, 116, 139, 0.5);
+      }
+      /* Utility for hiding scrollbar but keeping functionality */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 dark:bg-slate-950 transition-colors duration-500">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

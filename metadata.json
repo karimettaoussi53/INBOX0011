@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Copy of FixPro - AI Appliance Expert",
+  "description": "A multi-lingual AI expert for home appliance diagnosis and repair advice, supporting Arabic, Amazigh, French, and English.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
